@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Карточка */
+.container {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 16px;
+    width: 360px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Заголовок */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Поля ввода */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4f8cff;
+    box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.2);
+}
+
+/* Кнопка */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #4f8cff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #3a75e6;
+    transform: translateY(-1px);
+}
+
+/* Цвета BMI */
+.Underweight {
+    color: #1e88e5;
+}
+
+.Normal-weight {
+    color: #2e7d32;
+}
+
+.Overweight {
+    color: #f9a825;
+}
+
+.Obese {
+    color: #d32f2f;
+}
+
+/* Рекомендация */
+.recommendation {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #444;
+    text-align: center;
+}
+
+/* Ссылка */
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #4f8cff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
