@@ -95,8 +95,8 @@ app.listen(3000, ()=> {console.log("Server is running on port 3000"); })
 
 const math = require("./math");
 
-console.log("Addition:", math.square(5, 3));     
-console.log("Subtraction:", math.perimeter(10, 4)); 
+console.log("square:", math.square(5, 3));     
+console.log("perimeter:", math.perimeter(10, 4)); 
 
 const arrayUtils = require("./arrayUtils");
 
@@ -104,4 +104,5 @@ const numbers = [3, 7, 2, 9, 4];
 
 console.log("Max:", arrayUtils.findMax(numbers)); 
 console.log("Min:", arrayUtils.findMin(numbers)); 
+
 
