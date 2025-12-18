@@ -10,32 +10,8 @@ const recommendations = {
     Obese: "Consult a doctor and follow a structured health plan."
 };
 
-app.get("/", (req, res)=> {
-    res.send(`
-        <html>
-        <head>
-        <link rel="stylesheet" href="/style.css">
-        </head>
-    <body>
-    <div class="container">
-    <h2>BMI Calculator</h2>
-
-    <form action="/calculate-bmi" method="POST">
-        <input type="number" step="0.1" name="weight" placeholder="Weight (kg)" required />
-        <br></br>
-        <input type="number" step="0.01" name="height" placeholder="Height (m)" required />
-        <br></br>
-        <input type="number" step="0.1" name="fat" placeholder="Fat mass(kg)" required />
-        <br></br>
-        <input type="number" step="0.1" name="muscle" placeholder="Muscle mass (kg)" required />
-
-
-         <button type="submit">Calculate BMI </button>
-           </form>
-           </div>
-    </body>
-    </html>
-    `);
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/htmmm/front.html");
 });
 
 app.post("/calculate-bmi", (req, res)=>{
@@ -104,5 +80,6 @@ const numbers = [3, 7, 2, 9, 4];
 
 console.log("Max:", arrayUtils.findMax(numbers)); 
 console.log("Min:", arrayUtils.findMin(numbers)); 
+
 
 
